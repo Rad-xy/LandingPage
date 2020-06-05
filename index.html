@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Landing Page Frontend Developer</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__container flex">
+            <div class="header__hamburger">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav flex header__nav-list">
+                    <li class="nav__item header__nav-item">
+                        <a href="#about" class="nav__link header__nav-link">Услуги</a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a href="#work" class="nav__link header__nav-link">Портфолио</a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a href="#ad" class="nav__link header__nav-link">Стоимость</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__call">
+                <span class="header__contacts contacts"><a class="contacts__link" href="tel:+7 (499) 995 55 77">+7 (499)
+                        995-55-77</a></span>
+                <button class="header__btn btn-call btn-reset">Заказать звонок</button>
+                <span class="header__btn-mobile"><a href="#"></a></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="me">
+            <div class="me__background">
+                <svg>
+                    <linearGradient id="linear-gradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="#ff2f96" />
+                        <stop offset="100%" stop-color="#ff7b66" />
+                    </linearGradient>
+                    <path d="M200,768L1025,768L1025,260Q765,0 423,303Q100,618 200,768Z" fill="url(#linear-gradient)">
+                    </path>
+                </svg>
+                <img class="me__photo" src="img/man.png" alt="Фото">
+                <div class="fly-symbol">
+                    <span class="fly-symbol__top">{&nbsp;}</span>
+                    <span class="fly-symbol__top">&ltdiv&gt</span>
+                    <span class="fly-symbol__top">&ltdiv&gt</span>
+                    <span class="fly-symbol__top">&lt/&gt</span>
+                    <span class="fly-symbol__top">#</span>
+                </div>
+            </div>
+            <div class="name">
+                <div class="name__container container">
+                    <h2 class="name__title">Дмитрий Алексеев</h2>
+                    <p class="name__descr">Frontend-разработчик и веб-верстальщик</p>
+                    <button class="name__more btn-more btn-reset">Узнать больше</button>
+                </div>
+            </div>
+        </section>
+        <section class="about" id='about'>
+            <div class="about__container flex container">
+                <h2 class="about__title title">Что я делаю</h2>
+                <ul class="about__list">
+                    <li class="about__item">Вёрстка лендинг–страниц
+                        и сайтов любой сложности</li>
+                    <li class="about__item">Адаптивная вёрстка под все
+                        браузеры и устройства</li>
+                    <li class="about__item">Frontend–разработка
+                        и программирование</li>
+                    <li class="about__item">Исправление и доработка
+                        существующей вёрстки</li>
+                </ul>
+                <button class="about__more btn-more btn-reset">Узнать стоимость</button>
+            </div>
+        </section>
+        <section class="work container flex" id="work">
+            <h2 class="work__title title">Примеры моих работ</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Layer_1.jpg" alt="">
+                        <p>Сайт психолога Веры Антоновой</p>
+                    </div>
+                    <div class="swiper-slide"><img src="img/Layer_2.jpg" alt="">
+                        <p>Сайт магазина детской одежды</p>
+                    </div>
+                    <div class="swiper-slide"><img src="img/Layer_3.jpg" alt="">
+                        <p>Сайт магазина «Рыболов»</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <button class="work__more btn-more btn-reset">Заказать проект</button>
+        </section>
+        <aside class="ad" id="ad">
+            <div class="fly-symbol">
+                <span class="fly-symbol__bot">{&nbsp;}</span>
+                <span class="fly-symbol__bot">{&nbsp;}</span>
+                <span class="fly-symbol__bot">&ltdiv&gt</span>
+                <span class="fly-symbol__bot">&lt/&gt</span>
+                <span class="fly-symbol__bot">#</span>
+            </div>
+            <div class="ad__container container flex">
+                <h2 class="ad__title">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*
+                </h2>
+                <p class="ad__descr">* Срок и стоимость могут отличаться от заявленных и рассчитываются
+                    индивидуально, в зависимости от сложности задач.</p>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container flex">
+            <nav class="footer__menu">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link nav__link-footer">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link nav__link-footer">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#ad" class="nav__link nav__link-footer">Стоимость</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__contacts flex">
+                <span class="contacts footer__contacts-small"><a class="contacts__link" href="tel:+7 (499) 995 55 77"><i
+                            class="icon-phone"></i>&nbsp;&nbsp;+7 (499) 995-77-55</a></span>
+                <span class="contacts footer__contacts-small"><a class="contacts__link"
+                        href="mailto:dmitry@alekseev.com"><i
+                            class="icon-mail-alt"></i>&nbsp;&nbsp;dmitry@alekseev.com</a></span>
+            </div>
+            <div class="footer__social flex">
+                <button class="footer-btn btn-call btn-reset">Заказать звонок</button>
+                <ul class="social flex">
+                    <li class="social__item"><a target="_blank"
+                            href="http://vk.com/share.php?url=[URL]&title=[TITLE]&description=[DESC]&image=[IMAGE]&noparse=true"
+                            class="social__link social__link-vk"></a></li>
+                    <li class="social__item"><a target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=[URL]"
+                            class="social__link social__link-fb"></a></li>
+                    <li class="social__item"><a target="_blank" href="https://twitter.com/share?url=[URL]&text=[TITLE]"
+                            class="social__link social__link-tw"></a></li>
+                    <li class="social__item"><a target="_blank" href="https://www.instagram.com/?hl=ru"
+                            class="social__link social__link-inst"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© Дмитрий Алексеев, 2016 – 2018</div>
+    </footer>
+    <div class="overlay-call">
+        <div class="overlay-call__wrapper">
+            <div class="overlay-call__content" id="callTarget">
+                <a class="overlay-call__close">X</a>
+                <h3 class="overlay-call__title">Заказать обратный звонок</h3>
+                <form method="post" action="login.php">
+                    <label for="username">
+                        Ваше Имя:
+                        <input type="text" name="username" id="username" placeholder="Имя*" required />
+                    </label>
+                    <label for="telephone">
+                        Номер телефона:
+                        <input type="tel" name="telephone" id="telephone" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ*"
+                            pattern='[0-9]' required />
+                    </label>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-form">
+        <div class="overlay-form__wrapper">
+            <div class="overlay-form__content" id="formTarget">
+                <a class="overlay-form__close">X</a>
+                <h3 class="overlay-form__title">Узнать больше</h3>
+                <form method="post" action="login.php">
+                    <label for="username">
+                        Ваше Имя:
+                        <input type="text" name="username" id="username" placeholder="Имя*" required />
+                    </label>
+                    <label for="telephone">
+                        Номер телефона:
+                        <input type="tel" name="telephone" id="telephone" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ*"
+                            pattern='[0-9]' required />
+                    </label>
+                    <label for="email">
+                        e-mail:
+                        <input type="email" name="email" id="email" placeholder="e-mail*" required />
+                    </label>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

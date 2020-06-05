@@ -1,0 +1,119 @@
+.header {
+    &__container {
+        justify-content: space-between;
+    }
+    &__call {
+        padding-top: 22px;
+        @include _800 {
+            padding-top: 12px;
+        }
+    }
+    &__nav {
+        padding-top: 25px;
+        @include _1200 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin: 0;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__nav-list {
+        @include _1200 {
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+        }
+    }
+    &__nav-open {
+        z-index: 5;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+    &__nav-item {
+        padding-right: 31px;
+        @include _1200 {
+            padding-right: 0;
+            border-bottom: 1px solid black;
+        }
+    }
+    &__btn {
+        margin-left: 24px;
+        @include _800 {
+            display: none;
+        }
+    }
+    &__contacts {
+        font-size: 18px;
+    }
+    &__btn-mobile {
+        display: none;
+        vertical-align: middle;
+        height: 26px;
+        width: 26px;
+        background-image: url(/img/call.png);
+        background-repeat: no-repeat;
+        margin-left: 30px;
+        @include _800 {
+            display: inline-block;
+        }
+    }
+    &__hamburger {
+        // width: 46px;
+        // height: 46px;
+        display: none;
+        margin-top: 23px;
+        z-index: 6;
+        &:hover {
+            cursor: pointer;
+        }
+        @include _1200 {
+            display: block;
+        }
+    }
+    &__nav-link {
+        @include _1200 {
+            font-size: 30px;
+        }
+    }
+    &__hamburger-line {
+        width: 46px;
+        height: 5px;
+        background-color: $pink;
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        @include _800 {
+            width: 24px;
+            height: 2px;
+            margin: 6px auto;
+        }
+    }
+    &__hamburger-line_active {
+        position: fixed;
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:nth-child(1) {
+            -webkit-transform: translateY(13px) rotate(45deg);
+            -ms-transform: translateY(13px) rotate(45deg);
+            -o-transform: translateY(13px) rotate(45deg);
+            transform: translateY(13px) rotate(45deg);
+        }
+        &:nth-child(3) {
+            -webkit-transform: translateY(-13px) rotate(-45deg);
+            -ms-transform: translateY(-13px) rotate(-45deg);
+            -o-transform: translateY(-13px) rotate(-45deg);
+            transform: translateY(13px) rotate(-45deg);
+        }
+    }
+}
